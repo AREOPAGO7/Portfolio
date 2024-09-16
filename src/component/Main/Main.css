@@ -1,0 +1,93 @@
+/* Default Styles */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 7%;
+    height: 60vh; /* Full viewport height */
+    padding: 0 5%; /* Add padding on the sides */
+    position: relative;
+}
+
+.text-content {
+    margin-top: -10%;
+    max-width: 60%; /* Limit the width of the text content */
+    height: 70%;
+    
+    text-align: start; /* Align text to the start */
+}
+
+.canvas-container {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    max-width: 39%; /* Limit the width of the canvas */
+    height: 70vh; /* Set a default height for the canvas */
+    
+}
+.h1 {
+    padding-top: 10%;
+    font-size: 6.5rem; color: #f8f9fa;
+}
+.h2 {
+    font-size: 6.5rem; color: #dee2e6;
+}
+.h3 {
+    font-size: 6.5rem; color: #adb5bd;
+}
+.description {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+}
+
+/* Styles for 768px Screens */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack text and canvas vertically */
+        padding: 80px 2%; /* Adjusted padding for smaller screens */
+        margin-top: 22%;
+        align-items: center; /* Center align items for smaller screens */
+    }
+    .text-content {
+        max-width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Center text content */
+    }
+    .canvas-container {
+        display: none;
+        width: 90vw; /* Adjust canvas width for smaller screens */
+        height: 50vh; /* Adjust canvas height for smaller screens */
+        margin-top: 20px; /* Add space above the canvas */
+    }
+    .h1 {
+        font-size: 4rem; /* Increase text size for better readability */
+    }
+    .h2 {
+        font-size: 4rem; /* Increase text size for better readability */
+    }
+    .h3 {
+        font-size: 3rem; /* Increase text size for better readability */
+    }
+    .description {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Optional Styles for Canvas */
+.canvas-container canvas {
+    width: 100%; /* Ensure the canvas takes full width of its container */
+    height: 100%; /* Ensure the canvas takes full height of its container */
+}
+@media(max-width: 1080px) {
+    .canvas-container {
+        display: none;
+    }
+    .text-content{
+        width: 100%;
+        margin-top: -10%;
+        max-width: 100%; /* Limit the width of the text content */
+        height: 70%;
+        text-align: center; /* Align text to the start */
+        
+    }
+   
+}

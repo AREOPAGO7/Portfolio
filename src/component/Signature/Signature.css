@@ -1,0 +1,31 @@
+body{
+    background: #000;
+}
+
+#myPath{
+    stroke-dasharray: 3327;
+    animation: 7s SVG linear;
+    
+}
+@keyframes SVG{
+    0%{
+        stroke-dashoffset: 3327;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    #SVG{
+        display: none;
+    }
+}
+@media (max-width: 1700px) {
+    
+    #SVG{
+        display: none;
+    }
+}

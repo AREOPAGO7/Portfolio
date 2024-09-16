@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Transparent dark gray */
+    color: white; /* Text color */
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.brand-title {
+    width: 100px;
+}
+
+/* Center the navbar links */
+.navbar-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: max-height 0.4s ease-out;
+    overflow: hidden;
+}
+
+.navbar-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul li {
+    margin: 0 30px; /* Reduced margin for better spacing */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar-links a:hover {
+    color: #ffffff; /* White color on hover */
+    border-bottom: 7px solid white;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile view: Hide links and display toggle button */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        background-color: #0D0D0D;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000; /* Ensure menu is above other elements */
+    }
+
+    .navbar-links.active {
+        max-height: 300px; /* Adjusted to ensure menu items are visible */
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links ul li {
+        margin: 15px 0; /* Increased spacing for better touch targets */
+    }
+
+    .toggle-button {
+        display: block;
+        color: white;
+    }
+
+    .blue-button {
+        display: none;
+    }
+}
+
+/* Tablet view: Adjust the size and spacing */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .navbar-links ul{
+        margin-bottom: 10%;
+    }
+    
+
+    .brand-title {
+        width: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+    .navbar-links ul li {
+        padding-top: 70px;
+    
+    }
+    
+
+}
+@media (min-width: 900px) and (max-width: 1060px) {
+    .navbar-links ul li {
+        padding-top: 100px;
+       
+    }
+  
+}
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .navbar-links ul li {
+        padding-top: 10px;
+        
+    }
+}
