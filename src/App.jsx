@@ -3,7 +3,9 @@ import Navbar from './component/Header/Navbar';
 import Main from './component/Main/Main';
 import Tech from './component/Tech/Tech';
 import Section1 from './component/Section1/Section1';
-import Signature from './component/Signature/Signature';
+
+import Div from './component/div/Div';
+
 
 function App() {
   const [size, setSize] = useState({ width: window.innerWidth, height: window.innerHeight });
@@ -24,6 +26,7 @@ function App() {
       
       <br />
       <Section1 />
+      <Div/>
     </>
   );
 }

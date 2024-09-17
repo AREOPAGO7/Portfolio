@@ -5,29 +5,29 @@
     align-items: center;
     color: white;
     margin-top: 7%;
-    height: 60vh; /* Full viewport height */
+    height: 100vh; /* Full viewport height */
     padding: 0 5%; /* Add padding on the sides */
     position: relative;
 }
 
 .text-content {
-    margin-top: -10%;
+    margin-top: -25%;
     max-width: 60%; /* Limit the width of the text content */
-    height: 70%;
+    height: 60%;
     
     text-align: start; /* Align text to the start */
 }
 
 .canvas-container {
     position: relative;
-    top: 15%;
+    top: -10%;
     left: 5%;
     max-width: 39%; /* Limit the width of the canvas */
     height: 70vh; /* Set a default height for the canvas */
     
 }
 .h1 {
-    padding-top: 10%;
+    padding-top: 7%;
     font-size: 6.5rem; color: #f8f9fa;
 }
 .h2 {
@@ -38,8 +38,11 @@
 }
 .description {
     font-size: 1.4rem; /* Adjust font size for smaller screens */
+    margin-bottom: 30px;
 }
-
+.Signature{
+    margin-top: -100px;
+}
 /* Styles for 768px Screens */
 @media (max-width: 768px) {
     .main-container {

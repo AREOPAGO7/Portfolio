@@ -10,17 +10,19 @@ const Main = () => {
     <>
     <div className='main-container'>
       <div className='text-content'>
-        <h1 className='h1'>Building sites fast</h1>
+        <h1 className='h1 font-mono'>Building sites fast</h1>
         
-        <h1 className='h2'>Efficient and </h1>
-        <h1 className='h3'> With ease</h1>
+        <h1 className='h2 font-mono' >Efficient and </h1>
+        <h1 className='h3 font-mono'> With ease</h1>
         
-        <p className='description'>
+        <p className='description font-mono'>
           Passionate full stack web developer with a knack for
           turning ideas into immersive online experiences.
           From sleek, responsive designs to robust backend solutions,
           I specialize in creating digital landscapes.
         </p>
+
+        <Signature className="Signature"></Signature>
       </div>
       <div className='canvas-container'>
         <Canvas
@@ -40,7 +42,7 @@ const Main = () => {
       </div>
      
     </div>
-     <Signature></Signature>
+     
     </>
   );
 };
