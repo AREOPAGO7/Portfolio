@@ -16,17 +16,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.7); /* Transparent dark gray */
+    background: rgba(12, 12, 12, 0.233); /* Transparent dark gray */
     color: white; /* Text color */
     position: fixed; /* Fixed position to stay at the top */
     top: 0; /* Align to the top */
     width: 100%; /* Full width */
-    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    backdrop-filter: blur(80px); /* Optional: Adds a blur effect to the background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .brand-title {
-    width: 100px;
+    width: 85px;
+    margin-left: 10%;
 }
 
 /* Center the navbar links */
@@ -44,27 +45,30 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin-right: 200px;
     margin: 0;
     padding: 0;
+    
 }
 
 .navbar-links ul li {
     margin: 0 30px; /* Reduced margin for better spacing */
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
+    
 }
 
 .navbar-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .navbar-links a:hover {
-    color: #ffffff; /* White color on hover */
-    border-bottom: 7px solid white;
+    color: #00d8cd; /* White color on hover */
+    
 }
 
 .toggle-button {
@@ -74,6 +78,22 @@ body {
     border: none;
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-icons a{
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
 
 /* Mobile view: Hide links and display toggle button */
 @media (max-width: 768px) {
@@ -89,7 +109,9 @@ body {
         transition: max-height 0.4s ease-in-out;
         z-index: 1000; /* Ensure menu is above other elements */
     }
-
+    .nav-icons{
+        display: none;
+    }
     .navbar-links.active {
         max-height: 300px; /* Adjusted to ensure menu items are visible */
     }
