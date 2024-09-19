@@ -1,14 +1,3 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar {
     height: 100px;
     margin-bottom: 20px;
@@ -23,6 +12,7 @@ body {
     width: 100%; /* Full width */
     backdrop-filter: blur(80px); /* Optional: Adds a blur effect to the background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .brand-title {
@@ -48,14 +38,12 @@ body {
     margin-right: 200px;
     margin: 0;
     padding: 0;
-    
 }
 
 .navbar-links ul li {
     margin: 0 30px; /* Reduced margin for better spacing */
     font-size: 15px;
     font-weight: 600;
-    
 }
 
 .navbar-links a {
@@ -68,7 +56,6 @@ body {
 
 .navbar-links a:hover {
     color: #00d8cd; /* White color on hover */
-    
 }
 
 .toggle-button {
@@ -78,40 +65,43 @@ body {
     border: none;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.nav-icons a{
+.nav-icons a {
     padding: 10px;
     font-size: 20px;
-    
 }
-
-
-
-
-
-
 
 /* Mobile view: Hide links and display toggle button */
 @media (max-width: 768px) {
+    .navbar {
+        z-index: 1000;
+    }
+
     .navbar-links {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 0;
-        width: 100%;
+        left: 250px;
+        width: 50%;
         max-height: 0;
-        background-color: #0D0D0D;
+        border-radius: 15px;
+        background: rgba(12, 12, 12, 0.233);
+        backdrop-filter: blur(80px); /* Optional: Adds a blur effect to the background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         transition: max-height 0.4s ease-in-out;
         z-index: 1000; /* Ensure menu is above other elements */
     }
-    .nav-icons{
+
+    .nav-icons {
         display: none;
     }
+
     .navbar-links.active {
         max-height: 300px; /* Adjusted to ensure menu items are visible */
     }
@@ -123,6 +113,7 @@ a{
 
     .navbar-links ul li {
         margin: 15px 0; /* Increased spacing for better touch targets */
+        z-index: 12;
     }
 
     .toggle-button {
@@ -137,34 +128,29 @@ a{
 
 /* Tablet view: Adjust the size and spacing */
 @media (min-width: 768px) and (max-width: 1024px) {
-    
-    .navbar-links ul{
+    .navbar-links ul {
         margin-bottom: 10%;
     }
-    
 
     .brand-title {
         width: 80px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1080px) {
     .navbar-links ul li {
         padding-top: 70px;
-    
     }
-    
-
 }
+
 @media (min-width: 900px) and (max-width: 1060px) {
     .navbar-links ul li {
         padding-top: 100px;
-       
     }
-  
 }
+
 @media (min-width: 1025px) and (max-width: 1080px) {
     .navbar-links ul li {
         padding-top: 10px;
-        
     }
 }

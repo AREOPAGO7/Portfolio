@@ -3,7 +3,14 @@ module.exports = {
     './src/**/*.{html,js,jsx,ts,tsx}', // Adjust the paths based on your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      boxShadow: {
+        'custom': '0 4px 60px 0 rgba(255, 255, 255, 0.2) !important',
+      },
+      
+
+    },
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],
       'Roboto': ['Roboto', 'sans-serif'],
@@ -14,15 +21,15 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#808080',
+      'white': '#ffffff',
       'black': '#000000',
-      'purple': '#3f3cbb',
+      'gray': '#101725',
       'midnight': '#121063',
       'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
+      'tahiti': '#1a1a1a',
+      'silver': '#6f747c',
       'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',}
+      'bermuda': '#363636',}
   },
   plugins: [],
 }

@@ -4,7 +4,7 @@ import Main from './component/Main/Main';
 import Tech from './component/Tech/Tech';
 import Section1 from './component/Section1/Section1';
 
-import Div from './component/div/Div';
+
 
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
       
       <br />
       <Section1 />
-      <Div/>
+    
+      
     </>
   );
 }
