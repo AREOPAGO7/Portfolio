@@ -6,8 +6,8 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    margin-top: 120px; /* Adjusted to account for the navbar */
-    height: 100vh; /* Full viewport height */
+    margin-top: 200px; /* Adjusted to account for the navbar */
+    height: 70vh; /* Full viewport height */
     padding: 0 5%; /* Add padding on the sides */
     position: relative;
 }
@@ -29,15 +29,17 @@
 
 .h1 {
     padding-top: 7%;
-    font-size: 6.5rem; color: #f8f9fa;
+    font-size: 6rem; color: #ffffffea;
 }
 
+
 .h2 {
-    font-size: 6.5rem; color: #dee2e6;
+    font-size: 6rem; color: #ffffffea;
 }
 
 .h3 {
-    font-size: 6.5rem; color: #adb5bd;
+    font-size: 6rem; color: #ffffffea;
+    padding-bottom: 20px;
 }
 
 .description {
@@ -93,7 +95,7 @@
     height: 100%; /* Ensure the canvas takes full height of its container */
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1480px) {
     .canvas-container {
         display: none;
     }
@@ -105,4 +107,84 @@
         height: 70%;
         text-align: center; /* Align text to the start */
     }
+}
+@media (min-width: 1081px) and (max-width: 1499px){
+    .h1 {
+        font-size: 6rem; /* Increase text size for better readability */
+    }
+
+    .h2 {
+        font-size: 6rem; /* Increase text size for better readability */
+    }
+
+    .h3 {
+        font-size: 5rem; /* Increase text size for better readability */
+    }
+
+    .description {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+
+}
+@media (min-width: 890px) and (max-width: 1080px){
+    .h1 {
+        font-size: 6.5rem; /* Increase text size for better readability */
+        
+    }
+
+    .h2 {
+        font-size: 6.5rem; /* Increase text size for better readability */
+    }
+
+    .h3 {
+        font-size: 5.5rem; /* Increase text size for better readability */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    
+}
+@media (min-width: 768px) and (max-width: 890px){
+    .h1 {
+        font-size: 5.5rem; /* Increase text size for better readability */
+        
+    }
+
+    .h2 {
+        font-size: 5.5rem; /* Increase text size for better readability */
+    }
+
+    .h3 {
+        font-size: 5rem; /* Increase text size for better readability */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    
+}
+@media (max-width: 430px){
+    .h1 {
+        font-size: 4.5rem; /* Increase text size for better readability */
+        
+    }
+
+    .h2 {
+        font-size: 3.5rem; /* Increase text size for better readability */
+    }
+
+    .h3 {
+        font-size: 3.5rem; /* Increase text size for better readability */
+    }
+
+    .description {
+        padding-top: 50px;
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    
 }

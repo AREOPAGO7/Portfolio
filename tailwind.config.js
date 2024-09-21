@@ -6,27 +6,24 @@ module.exports = {
     extend: {
 
       boxShadow: {
-        'custom': '0 4px 60px 0 rgba(255, 255, 255, 0.2) !important',
+        'custom': '0 4px 60px 0 rgba(255, 255, 255, 0.3) !important',
       },
       
 
     },
     fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui'],
-      'Roboto': ['Roboto', 'sans-serif'],
-      'mono': ['ui-monospace', 'SFMono-Regular'],
-      'display': ['Oswald'],
-      'body': ['"Open Sans"']
+      roboto: ['Roboto', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
+      'green': '#32a852',
       'black': '#000000',
       'gray': '#101725',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#1a1a1a',
+      'white2': '#121063',
+      'metal': '#b6b6b6',
+      'tahiti': '#0e0e0e',
       'silver': '#6f747c',
       'bubble-gum': '#ff77e9',
       'bermuda': '#363636',}

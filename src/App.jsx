@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './component/Header/Navbar';
 import Main from './component/Main/Main';
-import Tech from './component/Tech/Tech';
+import Quote from './component/quote/Quote.jsx';
 import Section1 from './component/Section1/Section1';
 
 
@@ -25,6 +25,7 @@ function App() {
       <Main size={size} ></Main>
       
       <br />
+      <Quote/>
       <Section1 />
     
       
