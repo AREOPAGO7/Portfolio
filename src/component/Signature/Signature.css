@@ -1,8 +1,12 @@
 
-
+#SVG{
+    width: 190px;
+    margin-top: 30px;
+}
 #myPath{
     stroke-dasharray: 3327;
     animation: 7s SVG linear;
+    
     
 }
 @keyframes SVG{
@@ -15,14 +19,8 @@
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
 
-    #SVG{
-        display: none;
-    }
-}
-@media (max-width: 1700px) {
-    
     #SVG{
         display: none;
     }

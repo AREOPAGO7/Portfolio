@@ -6,14 +6,14 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    margin-top: 200px; /* Adjusted to account for the navbar */
-    height: 70vh; /* Full viewport height */
+    margin-top: 220px; /* Adjusted to account for the navbar */
+    height: 50vh; /* Full viewport height */
     padding: 0 5%; /* Add padding on the sides */
     position: relative;
 }
 
 .text-content {
-    margin-top: -25%;
+    margin-top: -26%;
     max-width: 60%; /* Limit the width of the text content */
     height: 60%;
     text-align: start; /* Align text to the start */
@@ -21,7 +21,7 @@
 
 .canvas-container {
     position: relative;
-    top: -10%;
+    top: 10%;
     left: 5%;
     max-width: 39%; /* Limit the width of the canvas */
     height: 70vh; /* Set a default height for the canvas */
@@ -29,27 +29,26 @@
 
 .h1 {
     padding-top: 7%;
-    font-size: 6rem; color: #ffffffea;
+    font-size: 6.5rem; color: #ffffffea;
 }
 
 
 .h2 {
-    font-size: 6rem; color: #ffffffea;
+    font-size: 6.5rem; color: #ffffffea;
 }
 
 .h3 {
-    font-size: 6rem; color: #ffffffea;
+    font-size: 6.5rem; color: #ffffffea;
     padding-bottom: 20px;
 }
 
 .description {
-    font-size: 1.4rem; /* Adjust font size for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
     margin-bottom: 30px;
+    color: rgb(139, 139, 139);
 }
 
-.Signature {
-    margin-top: -100px;
-}
+
 
 /* Styles for 768px Screens */
 @media (max-width: 768px) {
@@ -99,7 +98,9 @@
     .canvas-container {
         display: none;
     }
-
+    .main-container {
+       margin-top: 90px;
+    }
     .text-content {
         width: 100%;
         margin-top: -10%;
@@ -109,16 +110,19 @@
     }
 }
 @media (min-width: 1081px) and (max-width: 1499px){
+    .main-container {
+        margin-top: 90px;
+     }
     .h1 {
-        font-size: 6rem; /* Increase text size for better readability */
+        font-size: 4.5rem; /* Increase text size for better readability */
     }
 
     .h2 {
-        font-size: 6rem; /* Increase text size for better readability */
+        font-size: 4.5rem; /* Increase text size for better readability */
     }
 
     .h3 {
-        font-size: 5rem; /* Increase text size for better readability */
+        font-size: 4.5rem; /* Increase text size for better readability */
     }
 
     .description {
@@ -129,12 +133,12 @@
 }
 @media (min-width: 890px) and (max-width: 1080px){
     .h1 {
-        font-size: 6.5rem; /* Increase text size for better readability */
+        font-size: 5.5rem; /* Increase text size for better readability */
         
     }
 
     .h2 {
-        font-size: 6.5rem; /* Increase text size for better readability */
+        font-size: 5.5rem; /* Increase text size for better readability */
     }
 
     .h3 {
@@ -147,29 +151,9 @@
 
     
 }
-@media (min-width: 768px) and (max-width: 890px){
+@media (min-width: 400px) and (max-width: 890px){
     .h1 {
-        font-size: 5.5rem; /* Increase text size for better readability */
-        
-    }
-
-    .h2 {
-        font-size: 5.5rem; /* Increase text size for better readability */
-    }
-
-    .h3 {
-        font-size: 5rem; /* Increase text size for better readability */
-    }
-
-    .description {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    
-}
-@media (max-width: 430px){
-    .h1 {
-        font-size: 4.5rem; /* Increase text size for better readability */
+        font-size: 3.5rem; /* Increase text size for better readability */
         
     }
 
@@ -182,7 +166,6 @@
     }
 
     .description {
-        padding-top: 50px;
         font-size: 1rem; /* Adjust font size for smaller screens */
     }
 

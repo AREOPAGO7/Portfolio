@@ -10,10 +10,9 @@ const Main = () => {
     <>
     <div className='main-container'>
       <div className='text-content'>
-        <h1 className='h1 font-mono font-bold'>Building sites fast</h1>
-        
-        <h1 className='h2 font-mono font-bold' >Efficient and </h1>
-        <h1 className='h3 font-mono font-bold'> With ease</h1>
+        <h1 className='h1 font-mono font-bold'>Crafting code, </h1>
+        <h1 className='h2 font-mono font-bold' >shaping futures. </h1>
+<br />
         
         <p className='description font-mono'>
           Passionate full stack web developer with a knack for
@@ -44,14 +43,14 @@ const Main = () => {
 
     </div>
     <div className="flex justify-center items-center h-48 mb-100px">
-  <div className="space-x-4">
+  <div className="space-x-4 2xl:mt-16">
     
-    <button className="px-6 py-3 mb-32 bg-green text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition ease-in-out duration-300">
+    <button className="px-6 py-3  bg-green text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition ease-in-out duration-300">
       <a href="mailto:your-anaskalkhi123@gmail.com">Hire Me</a>
     </button>
 
     
-    <button className="px-6 py-3 mb-32 bg-white text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition ease-in-out duration-300">
+    <button className="px-6 py-3  mb-3 bg-white text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition ease-in-out duration-300">
       Document
     </button>
   </div>
