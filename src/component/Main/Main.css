@@ -2,172 +2,164 @@
 
 /* Default Styles */
 .main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin-top: 220px; /* Adjusted to account for the navbar */
-    height: 50vh; /* Full viewport height */
-    padding: 0 5%; /* Add padding on the sides */
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 220px; /* Adjusted to account for the navbar */
+  height: 50vh; /* Full viewport height */
+  padding: 0 5%; /* Add padding on the sides */
+  position: relative;
 }
 
 .text-content {
-    margin-top: -26%;
-    max-width: 60%; /* Limit the width of the text content */
-    height: 60%;
-    text-align: start; /* Align text to the start */
+  margin-top: -26%;
+  max-width: 60%; /* Limit the width of the text content */
+  height: 60%;
+  text-align: start; /* Align text to the start */
 }
 
 .canvas-container {
-    position: relative;
-    top: 10%;
-    left: 5%;
-    max-width: 39%; /* Limit the width of the canvas */
-    height: 70vh; /* Set a default height for the canvas */
+  position: relative;
+  top: 10%;
+  left: 5%;
+  max-width: 39%; /* Limit the width of the canvas */
+  height: 70vh; /* Set a default height for the canvas */
 }
 
 .h1 {
-    padding-top: 7%;
-    font-size: 6.5rem; color: #ffffffea;
+  padding-top: 7%;
+  font-size: 6.5rem;
+  color: #ffffffea;
 }
 
-
 .h2 {
-    font-size: 6.5rem; color: #ffffffea;
+  font-size: 6.5rem;
+  color: #ffffffea;
 }
 
 .h3 {
-    font-size: 6.5rem; color: #ffffffea;
-    padding-bottom: 20px;
+  font-size: 6.5rem;
+  color: #ffffffea;
+  padding-bottom: 20px;
 }
 
 .description {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
-    margin-bottom: 30px;
-    color: rgb(139, 139, 139);
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
+  margin-bottom: 30px;
+  color: rgb(139, 139, 139);
 }
-
-
 
 /* Styles for 768px Screens */
 @media (max-width: 768px) {
-    .main-container {
-        flex-direction: column; /* Stack text and canvas vertically */
-        padding: 80px 2%; /* Adjusted padding for smaller screens */
-        margin-top: 43%; /* Adjust for smaller screens */
-        align-items: center; /* Center align items for smaller screens */
-    }
+  .main-container {
+    flex-direction: column; /* Stack text and canvas vertically */
+    padding: 80px 2%; /* Adjusted padding for smaller screens */
+    margin-top: 43%; /* Adjust for smaller screens */
+    align-items: center; /* Center align items for smaller screens */
+  }
 
-    .text-content {
-        max-width: 100%; /* Full width on smaller screens */
-        text-align: center; /* Center text content */
-    }
+  .text-content {
+    max-width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center text content */
+  }
 
-    .canvas-container {
-        display: none;
-        width: 90vw; /* Adjust canvas width for smaller screens */
-        height: 50vh; /* Adjust canvas height for smaller screens */
-        margin-top: 20px; /* Add space above the canvas */
-    }
+  .canvas-container {
+    display: none;
+    width: 90vw; /* Adjust canvas width for smaller screens */
+    height: 50vh; /* Adjust canvas height for smaller screens */
+    margin-top: 20px; /* Add space above the canvas */
+  }
 
-    .h1 {
-        font-size: 4rem; /* Increase text size for better readability */
-    }
+  .h1 {
+    font-size: 4rem; /* Increase text size for better readability */
+  }
 
-    .h2 {
-        font-size: 4rem; /* Increase text size for better readability */
-    }
+  .h2 {
+    font-size: 4rem; /* Increase text size for better readability */
+  }
 
-    .h3 {
-        font-size: 3rem; /* Increase text size for better readability */
-    }
+  .h3 {
+    font-size: 3rem; /* Increase text size for better readability */
+  }
 
-    .description {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-    }
+  .description {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
 }
 
 /* Optional Styles for Canvas */
 .canvas-container canvas {
-    width: 100%; /* Ensure the canvas takes full width of its container */
-    height: 100%; /* Ensure the canvas takes full height of its container */
+  width: 100%; /* Ensure the canvas takes full width of its container */
+  height: 100%; /* Ensure the canvas takes full height of its container */
 }
 
 @media (max-width: 1480px) {
-    .canvas-container {
-        display: none;
-    }
-    .main-container {
-       margin-top: 90px;
-    }
-    .text-content {
-        width: 100%;
-        margin-top: -10%;
-        max-width: 100%; /* Limit the width of the text content */
-        height: 70%;
-        text-align: center; /* Align text to the start */
-    }
+  .canvas-container {
+    display: none;
+  }
+  .main-container {
+    margin-top: 90px;
+  }
+  .text-content {
+    width: 100%;
+    margin-top: -10%;
+    max-width: 100%; /* Limit the width of the text content */
+    height: 70%;
+    text-align: center; /* Align text to the start */
+  }
 }
-@media (min-width: 1081px) and (max-width: 1499px){
-    .main-container {
-        margin-top: 90px;
-     }
-    .h1 {
-        font-size: 4.5rem; /* Increase text size for better readability */
-    }
+@media (min-width: 1081px) and (max-width: 1499px) {
+  .main-container {
+    margin-top: 90px;
+  }
+  .h1 {
+    font-size: 4.5rem; /* Increase text size for better readability */
+  }
 
-    .h2 {
-        font-size: 4.5rem; /* Increase text size for better readability */
-    }
+  .h2 {
+    font-size: 4.5rem; /* Increase text size for better readability */
+  }
 
-    .h3 {
-        font-size: 4.5rem; /* Increase text size for better readability */
-    }
+  .h3 {
+    font-size: 4.5rem; /* Increase text size for better readability */
+  }
 
-    .description {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-    }
-
-
+  .description {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
 }
-@media (min-width: 890px) and (max-width: 1080px){
-    .h1 {
-        font-size: 5.5rem; /* Increase text size for better readability */
-        
-    }
+@media (min-width: 890px) and (max-width: 1080px) {
+  .h1 {
+    font-size: 5.5rem; /* Increase text size for better readability */
+  }
 
-    .h2 {
-        font-size: 5.5rem; /* Increase text size for better readability */
-    }
+  .h2 {
+    font-size: 5.5rem; /* Increase text size for better readability */
+  }
 
-    .h3 {
-        font-size: 5.5rem; /* Increase text size for better readability */
-    }
+  .h3 {
+    font-size: 5.5rem; /* Increase text size for better readability */
+  }
 
-    .description {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    
+  .description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }
-@media (min-width: 400px) and (max-width: 890px){
-    .h1 {
-        font-size: 3.5rem; /* Increase text size for better readability */
-        
-    }
+@media (min-width: 400px) and (max-width: 890px) {
+  .h1 {
+    font-size: 3.5rem; /* Increase text size for better readability */
+  }
 
-    .h2 {
-        font-size: 3.5rem; /* Increase text size for better readability */
-    }
+  .h2 {
+    font-size: 3.5rem; /* Increase text size for better readability */
+  }
 
-    .h3 {
-        font-size: 3.5rem; /* Increase text size for better readability */
-    }
+  .h3 {
+    font-size: 3.5rem; /* Increase text size for better readability */
+  }
 
-    .description {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    
+  .description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }

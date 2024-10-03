@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 /* Custom styles */
 html, body {
  
@@ -9,7 +13,7 @@ html, body {
   padding: 0; /* Remove default padding */
   /* background: linear-gradient(135deg, #000000, #2e2e2e); Gradient from black to dark gray */
   background-size: cover; 
-  background: #000000; /* Ensures the gradient covers the entire background */
+  background: linear-gradient(90deg, #000000 30%, #292929); /* Ensures the gradient covers the entire background */
   background-attachment: fixed; /* Keeps the background fixed during scrolling */
 /* Ensures padding is included in height */
 }

@@ -1,156 +1,160 @@
 .navbar {
-    height: 100px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(12, 12, 12, 0.233); /* Transparent dark gray */
-    color: white; /* Text color */
-    position: fixed; /* Fixed position to stay at the top */
-    top: 0; /* Align to the top */
-    width: 100%; /* Full width */
-    backdrop-filter: blur(80px); /* Optional: Adds a blur effect to the background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(12, 12, 12, 0.233); /* Transparent dark gray */
+  color: white; /* Text color */
+  position: fixed; /* Fixed position to stay at the top */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  backdrop-filter: blur(
+    20px
+  ); /* Optional: Adds a blur effect to the background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .brand-title {
-    width: 85px;
-    margin-left: 10%;
+  width: 85px;
+  margin-left: 5%;
 }
 
 /* Center the navbar links */
 .navbar-links {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: max-height 0.4s ease-out;
-    overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: max-height 0.4s ease-out;
+  overflow: hidden;
 }
 
 .navbar-links ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-right: 200px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 200px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links ul li {
-    margin: 0 30px; /* Reduced margin for better spacing */
-    font-size: 15px;
-    font-weight: 600;
+  margin: 0 30px; /* Reduced margin for better spacing */
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-    position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
 .navbar-links a:hover {
-    color: #00d8cd; /* White color on hover */
+  color: #00d8cd; /* White color on hover */
 }
 
 .toggle-button {
-    display: none;
-    font-size: 1.8em;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .nav-icons a {
-    padding: 10px;
-    font-size: 20px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 /* Mobile view: Hide links and display toggle button */
 @media (max-width: 768px) {
-    .navbar {
-        z-index: 1000;
-    }
+  .navbar {
+    z-index: 1000;
+  }
 
-    .navbar-links {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 250px;
-        width: 50%;
-        max-height: 0;
-        border-radius: 15px;
-        background: rgba(12, 12, 12, 0.233);
-        backdrop-filter: blur(80px); /* Optional: Adds a blur effect to the background */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-        z-index: 1000; /* Ensure menu is above other elements */
-    }
+  .navbar-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    width: 50%;
+    max-height: 0;
+    border-radius: 15px;
+    background: rgba(12, 12, 12, 0.233);
+    backdrop-filter: blur(
+      80px
+    ); /* Optional: Adds a blur effect to the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    z-index: 1000; /* Ensure menu is above other elements */
+  }
 
-    .nav-icons {
-        display: none;
-    }
+  .nav-icons {
+    display: none;
+  }
 
-    .navbar-links.active {
-        max-height: 300px; /* Adjusted to ensure menu items are visible */
-    }
+  .navbar-links.active {
+    max-height: 300px; /* Adjusted to ensure menu items are visible */
+  }
 
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .navbar-links ul li {
-        margin: 15px 0; /* Increased spacing for better touch targets */
-        z-index: 12;
-    }
+  .navbar-links ul li {
+    margin: 15px 0; /* Increased spacing for better touch targets */
+    z-index: 12;
+  }
 
-    .toggle-button {
-        display: block;
-        color: white;
-    }
+  .toggle-button {
+    display: block;
+    color: white;
+  }
 
-    .blue-button {
-        display: none;
-    }
+  .blue-button {
+    display: none;
+  }
 }
 
 /* Tablet view: Adjust the size and spacing */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .navbar-links ul {
-        margin-bottom: 10%;
-    }
+  .navbar-links ul {
+    margin-bottom: 10%;
+  }
 
-    .brand-title {
-        width: 80px;
-    }
+  .brand-title {
+    width: 80px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1080px) {
-    .navbar-links ul li {
-        padding-top: 70px;
-    }
+  .navbar-links ul li {
+    padding-top: 70px;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1060px) {
-    .navbar-links ul li {
-        padding-top: 100px;
-    }
+  .navbar-links ul li {
+    padding-top: 100px;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1080px) {
-    .navbar-links ul li {
-        padding-top: 10px;
-    }
+  .navbar-links ul li {
+    padding-top: 10px;
+  }
 }
