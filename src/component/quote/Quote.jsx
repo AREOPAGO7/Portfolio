@@ -31,8 +31,8 @@ const Quote = () => {
           opacity: isVisible ? 1 : 0,
           transform: isVisible ? "translateY(0)" : "translateY(80px)"
         }}
-        className="text-white 2xl:mt-28  h-10  text-center sm:text-7xl sm:mb-44  2xl:text-7xl
-         text-4xl p-10 md:mb-44 mb-20 font-extrabold text-wrap"
+        className="text-white 2xl:mt-28  h-10  text-center sm:text-5xl sm:mb-44  2xl:text-6xl
+         text-4xl p-10 md:mb-24 mb-20 font-extrabold text-wrap"
       >
         Building ideas, Empowering The Future.
       </h1>

@@ -1,5 +1,5 @@
 .navbar {
-  height: 100px;
+  height: 80px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -50,14 +50,14 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.837);
   font-size: 1.2em;
   transition: color 0.3s ease;
   position: relative;
 }
 
 .navbar-links a:hover {
-  color: #00d8cd; /* White color on hover */
+  color: #93fffa; /* White color on hover */
 }
 
 .toggle-button {

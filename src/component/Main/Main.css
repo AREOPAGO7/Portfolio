@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  margin-top: 220px; /* Adjusted to account for the navbar */
+  margin-top: 170px; /* Adjusted to account for the navbar */
   height: 50vh; /* Full viewport height */
   padding: 0 5%; /* Add padding on the sides */
   position: relative;
@@ -121,9 +121,6 @@
     font-size: 4.5rem; /* Increase text size for better readability */
   }
 
-  .h3 {
-    font-size: 4.5rem; /* Increase text size for better readability */
-  }
 
   .description {
     font-size: 1.2rem; /* Adjust font size for smaller screens */
@@ -138,9 +135,6 @@
     font-size: 5.5rem; /* Increase text size for better readability */
   }
 
-  .h3 {
-    font-size: 5.5rem; /* Increase text size for better readability */
-  }
 
   .description {
     font-size: 1rem; /* Adjust font size for smaller screens */
@@ -148,16 +142,14 @@
 }
 @media (min-width: 400px) and (max-width: 890px) {
   .h1 {
-    font-size: 3.5rem; /* Increase text size for better readability */
+    font-size: 2.5rem; /* Increase text size for better readability */
   }
 
   .h2 {
-    font-size: 3.5rem; /* Increase text size for better readability */
+    font-size: 2.5rem; /* Increase text size for better readability */
   }
 
-  .h3 {
-    font-size: 3.5rem; /* Increase text size for better readability */
-  }
+  
 
   .description {
     font-size: 1rem; /* Adjust font size for smaller screens */

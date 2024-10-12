@@ -3,7 +3,6 @@ import Navbar from "./component/Header/Navbar";
 import Main from "./component/Main/Main";
 import Quote from "./component/quote/Quote.jsx";
 import Section1 from "./layouts/Section1/Section1";
-import Section2 from "./layouts/Section2/Section2";
 import Section3 from "./layouts/Section3/Section3";
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
       <br />
       <Quote />
       <Section1 />
-      <Section2 />
+      
       <Section3></Section3>
     </>
   );
