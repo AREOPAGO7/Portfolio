@@ -26,7 +26,7 @@ const Quote = () => {
       <h1
         id="quote"
         style={{
-          textShadow: "0px 0px 9px rgba(255,255,255,0.5)",
+          textShadow: "0px 0px 6px rgba(255,255,255,0.5)",
           transition: "opacity 1.5s ease-out, transform 1s ease-out",
           opacity: isVisible ? 1 : 0,
           transform: isVisible ? "translateY(0)" : "translateY(80px)"

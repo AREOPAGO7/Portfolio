@@ -111,47 +111,49 @@
 }
 @media (min-width: 1081px) and (max-width: 1499px) {
   .main-container {
-    margin-top: 90px;
+    margin-top: 70px;
   }
   .h1 {
-    font-size: 4.5rem; /* Increase text size for better readability */
+    font-size: 5rem; /* Increase text size for better readability */
   }
 
   .h2 {
-    font-size: 4.5rem; /* Increase text size for better readability */
+    font-size: 5rem; /* Increase text size for better readability */
   }
 
 
   .description {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+    
   }
 }
 @media (min-width: 890px) and (max-width: 1080px) {
+  
   .h1 {
-    font-size: 5.5rem; /* Increase text size for better readability */
+    font-size: 4.5rem; /* Increase text size for better readability */
   }
 
   .h2 {
-    font-size: 5.5rem; /* Increase text size for better readability */
+    font-size: 4.5rem; /* Increase text size for better readability */
   }
 
 
   .description {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
   }
 }
 @media (min-width: 400px) and (max-width: 890px) {
   .h1 {
-    font-size: 2.5rem; /* Increase text size for better readability */
+    font-size: 3rem; /* Increase text size for better readability */
   }
 
   .h2 {
-    font-size: 2.5rem; /* Increase text size for better readability */
+    font-size: 3rem; /* Increase text size for better readability */
   }
 
   
 
   .description {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
   }
 }
