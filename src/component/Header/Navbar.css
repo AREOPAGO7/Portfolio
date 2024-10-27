@@ -1,5 +1,5 @@
 .navbar {
-  height: 80px;
+  height: 90px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -18,8 +18,8 @@
 }
 
 .brand-title {
-  width: 85px;
-  margin-left: 5%;
+  width: 65px;
+  margin-left: 8%;
 }
 
 /* Center the navbar links */
@@ -44,7 +44,7 @@
 
 .navbar-links ul li {
   margin: 0 30px; /* Reduced margin for better spacing */
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -72,18 +72,23 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-
+.nav-icons{
+  margin-right : 100px;
+}
 .nav-icons a {
   padding: 10px;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 /* Mobile view: Hide links and display toggle button */
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .navbar {
     z-index: 1000;
   }
-
+  .brand-title {
+    
+    margin-left: 1%;
+  }
   .navbar-links {
     flex-direction: column;
     position: absolute;
@@ -125,36 +130,6 @@ a {
     color: white;
   }
 
-  .blue-button {
-    display: none;
-  }
+  
 }
 
-/* Tablet view: Adjust the size and spacing */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar-links ul {
-    margin-bottom: 10%;
-  }
-
-  .brand-title {
-    width: 80px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1080px) {
-  .navbar-links ul li {
-    padding-top: 70px;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1060px) {
-  .navbar-links ul li {
-    padding-top: 100px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1080px) {
-  .navbar-links ul li {
-    padding-top: 10px;
-  }
-}
