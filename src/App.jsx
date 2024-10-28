@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from "react";
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Header/Navbar";
-import Main from "./component/Main/Main";
-import Quote from "./component/quote/Quote.jsx";
-import Section1 from "./layouts/Section1/Section1";
-import Section3 from "./layouts/Section3/Section3";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Work from "./pages/Work";
+import NotFound from "./NotFound"; // Import the NotFound component
 
 function App() {
-  const [size, setSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setSize({ width: window.innerWidth, height: window.innerHeight });
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Main size={size}></Main>
-
-      <br />
-      <Quote />
-      <Section1 />
-      
-      <Section3></Section3>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
+      </Routes>
+    </Router>
   );
 }
 

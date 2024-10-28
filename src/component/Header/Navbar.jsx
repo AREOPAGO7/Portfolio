@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,18 +19,17 @@ const Navbar = () => {
         <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
       </div>
       <div className={`navbar-links ${isOpen ? "active" : ""}`}>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Work</a>
-          </li>
-        
-        </ul>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/work">Work</Link>
+        </li>
+      </ul>
       </div>
       <div className="nav-icons">
       <a href="https://x.com/Anas13764089068" target="_blank">
