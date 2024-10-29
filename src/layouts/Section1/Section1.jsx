@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from "react";
 import logo from "/public/logo.png";
 
 const Section1 = () => {
@@ -28,6 +29,7 @@ const Section1 = () => {
                   setDisplayText(() => texts[textIndex].slice(0, charIndex + 1));
               } else {
                   // Start erasing after a delay
+                  // eslint-disable-next-line no-unused-vars
                   const eraseTimeout = setTimeout(() => {
                     setIsErasing(true);
                   }, 2000);
@@ -43,14 +45,15 @@ const Section1 = () => {
             <div
                 style={{
                     border: "1px solid #3b3b3b",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "11",
                     position: "relative",
                 }}
-                className="row-span-1 md:row-span-7 lg:row-span-4 2xl:row-span-4 h-full text-center text-white rounded-2xl"
+                className=" row-span-1 md:row-span-7 lg:row-span-4 2xl:row-span-4 h-full text-center text-white rounded-2xl"
             >
-                <div className="flex items-center justify-start gap-8 p-16 pt-24 w-full">
-                    <img
+                <div className=" flex items-center justify-start gap-8 p-16 pt-24 w-full">
+                    <img style={{boxShadow: "0 4px 7px rgba(128, 128, 128, 0.4), 0 8px 30px rgba(128, 128, 128, 0.15)", borderRadius: "50%"
+}}
                         className="hover:scale-[1.1] transition-all ease-linear duration-200"
                         src={logo}
                         width={"80px"}
@@ -70,7 +73,7 @@ const Section1 = () => {
             <div
                 style={{
                     border: "1px solid #3b3b3b",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "10",
                 }}
                 className="text-center text-white/90 rounded-2xl xl:row-span-6 md:row-span-9"
@@ -95,7 +98,7 @@ const Section1 = () => {
                 style={{
                     border: "1px solid #3b3b3b",
                     overflow: "hidden",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "10",
                 }}
                 className="bg-tahiti flex text-center text-white 2xl:row-span-3 md:row-span-8 row-span-9 rounded-xl"
@@ -104,7 +107,7 @@ const Section1 = () => {
             <div
                 style={{
                     border: "1px solid #3b3b3b",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "10",
                 }}
                 className="bg-tahiti text-center text-white rounded-2xl 2xl:row-span-8 md:row-span-9 h-full"
@@ -132,7 +135,7 @@ const Section1 = () => {
             <div
                 style={{
                     border: "1px solid #3b3b3b",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "10",
                 }}
                 className="bg-tahiti text-center text-white rounded-2xl 2xl:row-span-7 md:row-span-9 h-full"
@@ -160,7 +163,7 @@ const Section1 = () => {
             <div
                 style={{
                     border: "1px solid #3b3b3b",
-                    backgroundColor: "#0e0e0e",
+                    backgroundColor: "black",
                     zIndex: "0",
                 }}
                 className="bg-tahiti text-center text-white 2xl:row-span-5 md:row-span-6 rounded-2xl"

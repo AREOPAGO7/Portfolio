@@ -43,11 +43,11 @@ const Main = () => {
       </div>
       <div className="flex justify-center items-center h-48 mb-100px">
         <div className="space-x-4 2xl:mt-16 md:mt-24">
-          <button className="px-6 py-3  bg-green text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition ease-in-out duration-300">
+          <button className="px-6 py-3  bg-[#919191] text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition ease-in-out duration-300">
             <a href="mailto:your-anaskalkhi123@gmail.com">Hire Me</a>
           </button>
 
-          <button className="px-6 py-3   mb-3 bg-white text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition ease-in-out duration-300">
+          <button className="px-6 py-3  font-bold mb-3 bg-white text-gray-800  rounded-lg shadow-md hover:bg-gray-200 transition ease-in-out duration-300">
             Document
           </button>
         </div>
