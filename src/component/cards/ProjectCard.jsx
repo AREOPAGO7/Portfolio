@@ -23,7 +23,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="max-w-[28rem] mx-auto mb-10  rounded-lg overflow-hidden shadow-lg border border-white/15">
+    <div className="max-w-[28rem] mx-auto mb-10 bg-transparent backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-white/15">
       <div className="relative">
         <img
           src={images[currentImage]}
@@ -31,20 +31,6 @@ const ProjectCard = ({
           className="w-[97%] mx-auto p-4 rounded-lg h-50 object-cover"
         />
         <div className="absolute top-0 left-0 right-0 flex justify-between p-2">
-          <button
-            style={{ border: "1px solid #6b6b6b" }}
-            className="bg-black/80 hover:bg-black text-white font-bold py-2 px-3 rounded-md mt-28"
-            onClick={handlePreviousImage}
-          >
-            <img className="w-3 h-2 mt-2 mb-2" src={left}  alt="" />
-          </button>
-          <button
-            style={{ border: "1px solid #6b6b6b" }}
-            className="bg-black/80 hover:bg-black text-white font-bold py-2 px-3 rounded-md mt-28 "
-            onClick={handleNextImage}
-          >
-             <img className="w-3 h-2 mt-2 mb-2" src={right} alt="" />
-          </button>
         </div>
       </div>
       <div className="p-4">

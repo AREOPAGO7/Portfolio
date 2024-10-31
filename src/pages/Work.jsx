@@ -1,13 +1,16 @@
 // import { useState } from "react";
 import ProjectCard from '../component/cards/ProjectCard';
-
+import "./GridOverlay.css";
 // Import your images
 import i1 from '../assets/projects/i1.png';
 import i2 from '../assets/projects/i2.png';
 import i3 from '../assets/projects/i3.png';
-import b from '../assets/projects/b.png';
 import dash from '../assets/projects/dash.png';
 import chat from '../assets/projects/chat.png';
+import ContactForm  from "../component/ContactForm.jsx";
+import Section3 from "../layouts/Section3/Section3";
+
+
 
 
 function Work() {
@@ -53,49 +56,14 @@ function Work() {
       technologies: ["Html", "Tailwindcss","Bootstrap", "Javascript", "php", "MySQL", "Python" ],
       githubLink: "https://github.com/yourusername/task-manager",
     },
-    {
-      id: 4,
-      title: "---------------------",
-      description: [
-        "---------------------------",
-        "-----------------------------------------",
-        "------------------------------------------------------",
-        "-----------------------------------"
-      ],
-      images: [b],
-      technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-      githubLink: "https://github.com/yourusername/e-commerce",
-    },
-    {
-      id: 5,
-      title: "---------------------",
-      description: [
-        "---------------------------",
-        "-----------------------------------------",
-        "------------------------------------------------------",
-        "-----------------------------------"
-      ],
-      images: [b],
-      technologies: ["React", "Node.js", "Express.js"],
-      githubLink: "https://github.com/yourusername/social-media",
-    },
-    {
-      id: 6,
-      title: "---------------------",
-      description: [
-        "---------------------------",
-        "-----------------------------------------",
-        "------------------------------------------------------",
-        "-----------------------------------"
-      ],
-      images: [b],
-      technologies: ["React", "Firebase", "CSS"],
-      githubLink: "https://github.com/yourusername/blog-app",
-    },
-    // Add more projects as needed
+
+
   ];
 
   return (
+    <>
+     <ContactForm />
+    <div className="grid-overlay"></div>
     <div className="w-[80%] mx-auto p-8 mt-52 gap-6">
       <h2 className="text-2xl font-bold text-white mb-6"> Work</h2>
       <div className=" w-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 ">
@@ -111,6 +79,8 @@ function Work() {
         ))}
       </div>
     </div>
+    <Section3 />
+    </>
   );
 };
 

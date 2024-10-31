@@ -1,0 +1,31 @@
+/* src/styles/GridOverlay.css */
+.grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Ensures it doesn’t block interactions */
+    z-index: 0; /* Adjust to keep it behind the content */
+    
+    /* Faded grid effect */
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 66px, /* Increased from 40px to 66px for 65% wider cells */
+        rgba(255, 255, 255, 0.1) 66px,
+        rgba(255, 255, 255, 0.1) 67px
+      ),
+      repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 66px, /* Increased from 40px to 66px for 65% wider cells */
+        rgba(255, 255, 255, 0.1) 66px,
+        rgba(255, 255, 255, 0.1) 67px
+      );
+}
